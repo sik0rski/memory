@@ -23,6 +23,7 @@ function flipCard() {
     if (this === firstCard) return;
 
     const uniqueClass = Array.from(this.classList).find(cls => cls.startsWith('square_'));
+    console.clear();
     console.log(uniqueClass);
 
     this.classList.add('flipped');
@@ -52,7 +53,6 @@ function checkForMatch() {
 function disableCards() {
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
-
     resetBoard();
 }
 
@@ -62,11 +62,12 @@ function unflipCards() {
         secondCard.classList.remove('flipped');
         firstCard.textContent = '';
         secondCard.textContent = '';
-
         resetBoard();
     }, 1000);
 }
 
 function resetBoard() {
-    [firstCard, secondCard, lockBoard] = [null, null, false];
+    firstCard = null;
+    secondCard = null;
+    lockBoard = false;
 }
