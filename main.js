@@ -9,13 +9,16 @@ for (let i = 1; i <= totalPairs; i++) {
     values.push(i);
     values.push(i);
 }
-values.push('?');
+values.push('X');
 
 values = values.sort(() => 0.5 - Math.random());
 
 squares.forEach((square, index) => {
     square.dataset.value = values[index];
+    square.className += ` image-${values[index]}`
+
     square.addEventListener('click', flipCard);
+
 });
 
 function flipCard() {

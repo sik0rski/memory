@@ -1,3 +1,8 @@
+html,
+body {
+    height: 100%;
+}
+
 .square {
     aspect-ratio: 1;
     background-color: #FF8360;
@@ -5,9 +10,93 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    font-size: 2em;
+    color: white;
+    transition: box-shadow 0.3s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .container>.row {
     margin: 1em;
+}
+
+.square:hover {
+    -webkit-box-shadow: 0px 10px 19px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 10px 19px 0px rgba(66, 68, 90, 1);
+    box-shadow: 0px 10px 19px 0px rgba(66, 68, 90, 1);
+}
+
+.image-1.flipped {
+    background-image: url('https://picsum.photos/200');
+    background-position: center;
+    background-size: contain;
+}
+
+.image-2.flipped {
+    background-image: url('https://picsum.photos/201');
+    background-position: center;
+    background-size: contain;
+}
+
+.image-3.flipped {
+    background-image: url('https://picsum.photos/203');
+    background-position: center;
+    background-size: contain;
+}
+
+.image-4.flipped {
+    background-image: url('https://picsum.photos/204');
+    background-position: center;
+    background-size: contain;
+}
+
+.image-5.flipped {
+    background-image: url('https://picsum.photos/205');
+    background-position: center;
+    background-size: contain;
+}
+
+.image-6.flipped {
+    background-image: url('https://picsum.photos/206');
+    background-position: center;
+    background-size: contain;
+}
+
+.image-7.flipped {
+    background-image: url('https://picsum.photos/207');
+    background-position: center;
+    background-size: contain;
+}
+
+.image-8.flipped {
+    background-image: url('https://picsum.photos/208');
+    background-position: center;
+    background-size: contain;
+}
+
+.image-9.flipped {
+    background-image: url('https://picsum.photos/209');
+    background-position: center;
+    background-size: contain;
+}
+
+.image-1.flipped0 {
+    background-image: url('https://picsum.photos/210');
+    background-position: center;
+    background-size: contain;
+}
+
+.image-1.flipped1 {
+    background-image: url('https://picsum.photos/211');
+    background-position: center;
+    background-size: contain;
+}
+
+.image-1.flipped2 {
+    background-image: url('https://picsum.photos/212');
+    background-position: center;
+    background-size: contain;
+}
+
+.image-X.flipped {
+    background-color: black;
 }
