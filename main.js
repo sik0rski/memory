@@ -23,7 +23,7 @@ function flipCard() {
     if (this === firstCard) return;
 
     const uniqueClass = Array.from(this.classList).find(cls => cls.startsWith('square_'));
-    console.clear();
+    // console.clear();
     console.log(uniqueClass);
 
     this.classList.add('flipped');
