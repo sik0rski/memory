@@ -1,0 +1,9 @@
+.square {
+    aspect-ratio: 1;
+    background-color: #FF8360;
+}
+
+.container>.row {
+    margin: 1em;
+}
+
