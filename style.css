@@ -79,19 +79,19 @@ body {
     background-size: contain;
 }
 
-.image-1.flipped0 {
+.image-10.flipped0 {
     background-image: url('https://picsum.photos/210');
     background-position: center;
     background-size: contain;
 }
 
-.image-1.flipped1 {
+.image-11.flipped1 {
     background-image: url('https://picsum.photos/211');
     background-position: center;
     background-size: contain;
 }
 
-.image-1.flipped2 {
+.image-12.flipped2 {
     background-image: url('https://picsum.photos/212');
     background-position: center;
     background-size: contain;
